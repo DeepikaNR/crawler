@@ -11,7 +11,7 @@ class Learner1Pipeline(object):
         def __init__(self):
             self.file_prefix = 900
             self.file_extension = ".txt"
-            self.file_path = "/Users/deepikaravi/yojana/anveshika/harvest/"
+            self.file_path = "/harvest/"
 
         def _get_filename(self, item):
             file_name = self.file_path
