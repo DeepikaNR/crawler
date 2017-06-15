@@ -78,20 +78,3 @@ class JedaSpider(CrawlSpider):
         text = '\n'.join(chunk for chunk in chunks if chunk)
         return text
 
-"""
-    def error_handler(self, failure):
-        # log all failures
-        self.logger.error(repr(failure))
-
-for href in response.css("ul.directory.dir-col > li > a::attr('href')"):
-            url = response.urljoin(href.extract())
-            yield scrapy.Request(url, callback=self.parse_dir_contents)
-
-https://en.wikipedia.org/wiki/Karnataka
-
-"https://en.wikipedia.org/wiki/Ayurveda",
-        "https://en.wikipedia.org/wiki/List_of_engineering_colleges_affiliated_to_Visvesvaraya_Technological_University",
-        "http://swayampaaka.com/",
-        "http://www.webindia123.com/personal/person.htm"
-
-"""
